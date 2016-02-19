@@ -1,0 +1,91 @@
+header{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+}
+
+nav{
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 300px;
+	width: 150px;
+	float: left;
+	padding: 5px;
+}
+
+section#section1{
+	float: left;
+	padding: 10px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+}
+
+a#googleLink:link
+{
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+a#googleLink:visited
+{
+	color: purple;
+	background-color: transparent;
+	text-decoration: none;
+}
+a#googleLink:hover{
+	color: red;
+	background-color:transparent;
+	text-decoration: none;
+}
+a#googleLink:active{
+	color: blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+button#naverButton
+{
+	background-color: green;
+	border: none;
+	padding: 10px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	color: white;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4; /* Safari */
+	cursor: pointer;
+	border-radius: 4px;
+}
+button#naverButton:hover{
+	background-color: white;
+	border: none;
+	color: green;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
+
+img#googleLogo{
+	width: 342px;
+	height: 191px;
+	float: left;
+}
+
+img#naverLogo{
+	width: 191px;
+	height: 191px;
+	float: left;
+}
+
+div#gallery{
+	width: 100%;
+}
