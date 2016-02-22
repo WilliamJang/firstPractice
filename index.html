@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>firstPractice</title>
+		<title id="myTitle">firstPractice</title>
 		<link href="styles/style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
@@ -16,14 +16,14 @@
 		<nav>
 			<a id="googleLink" href="http://www.google.com">Link to Google</a>
 			<a id="naverLink" href="http://www.naver.com"><button id="naverButton">Link to Naver</button></a>
-		</nav>
+			<button id="titleChangeButton" onclick="titleChange()">Change the Title</button>		</nav>
 
 		<section id="section1">
 
 			<h1>This is section1</h1>
 			<p>Hello World!</p>
 			<div id="gallery">
-			
+
 				<img src='./images/google-logo.jpg' alt='Google Logo' id='googleLogo'>
 				<img src='./images/naver-logo.png' alt='Naver Logo' id='naverLogo'>
 
@@ -31,10 +31,19 @@
 
 		</section>
 
-
 		<footer>
 			This is footer
 		</footer>
+
+		<script>
+			function titleChange(){
+				var inputString = prompt("Please enter a new title", "firstPractice");	
+				document.getElementById("myTitle").innerHTML = inputString;
+			}
+		</script>
 	</body>
 
 </html>
+
+
+<!-- 자바스크립트로 title 바꾸기 -->
