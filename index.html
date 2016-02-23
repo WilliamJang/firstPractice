@@ -16,7 +16,7 @@
 		<nav>
 			<a id="googleLink" href="http://www.google.com">Link to Google</a>
 			<a id="naverLink" href="http://www.naver.com"><button id="naverButton">Link to Naver</button></a>
-			<button id="titleChangeButton" onclick="titleChange()">Change the Title</button>		</nav>
+		</nav>
 
 		<section id="section1">
 
@@ -24,8 +24,8 @@
 			<p>Hello World!</p>
 			<div id="gallery">
 
-				<img src='./images/google-logo.jpg' alt='Google Logo' id='googleLogo'>
-				<img src='./images/naver-logo.png' alt='Naver Logo' id='naverLogo'>
+				<img src='./images/google-logo.jpg' alt='Google Logo' id='googleLogo' onclick="titleChangeToGoogle()">
+				<img src='./images/naver-logo.png' alt='Naver Logo' id='naverLogo' onclick="titleChangeToNaver()">
 
 			</div>
 
@@ -36,9 +36,13 @@
 		</footer>
 
 		<script>
-			function titleChange(){
-				var inputString = prompt("Please enter a new title", "firstPractice");	
-				document.getElementById("myTitle").innerHTML = inputString;
+			function titleChangeToGoogle(){
+				//var inputString = prompt("Please enter a new title", "firstPractice");  This code exist for getting input for title.
+				document.getElementById("myTitle").innerHTML = "Google";
+			}
+
+			function titleChangeToNaver(){
+				document.getElementById("myTitle").innerHTML = "Naver";
 			}
 		</script>
 	</body>
