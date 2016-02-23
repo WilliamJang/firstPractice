@@ -24,6 +24,10 @@ section#section1{
 	padding: 10px;
 }
 
+section#centeringTutorials{
+	clear: both;
+}
+
 footer{
 	background-color: black;
 	color: white;
@@ -94,6 +98,20 @@ div#gallery{
 	width: 100%;
 }
 
+div.textCentered{
+	text-align: center;
+}
+
+div.blockCentered{
+}
+
+img#imageForCenteringBlock{
+	display: block;
+	margin: 0 auto;
+	width: 342px;
+	height: 191px;
+}
+
 /* Mobile Device */
 /* 768px 미만 해상도의 모바일 기기를 위한 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨. 미디어 쿼리를 지원하지 않는 모바일 기기를 위해 미디어 쿼리 구문을 사용하지 않는다. */
 
@@ -108,6 +126,7 @@ div#gallery{
 	section#section1{
 		padding: 10px;
 		margin: 0 auto;
+
 	}
 
 	img{
