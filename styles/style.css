@@ -6,7 +6,7 @@ header{
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding: 5px;
+	/*padding: 5px;*/      /*header, navigation, footer에 패딩 사용시 컨텐츠들이 오른쪽으로 밀리는 현상이 있음*/
 	width: 100%;
 }
 
@@ -14,9 +14,9 @@ nav{
 	line-height: 30px;
 	background-color: #eeeeee;
 	height: 300px;
-	width: 150px;
+	width: 300px;
 	float: left;
-	padding: 10px;
+	/*padding: 10px;*/
 }
 
 section#section1{
@@ -33,16 +33,17 @@ footer{
 	color: white;
 	clear: both;
 	text-align: center;
-	padding: 5px;
+	/*padding: 5px;*/
 	width: 100%;
 }
 
 a#googleLink:link
 {
+	display: block;
 	color: green;
-	background-color: transparent;
 	text-decoration: none;
 }
+
 a#googleLink:visited
 {
 	color: purple;
@@ -115,24 +116,26 @@ img#imageForCenteringBlock{
 /* Mobile Device */
 /* 768px 미만 해상도의 모바일 기기를 위한 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨. 미디어 쿼리를 지원하지 않는 모바일 기기를 위해 미디어 쿼리 구문을 사용하지 않는다. */
 
-@media all and (max-width: 450px) {
+
+@media all and (max-width: 600px) {
 
 	nav{
 		width: 100%;
-		height: 80px;
-		padding: 10px;
+		height: 200px;
 	}
 
 	section#section1{
-		padding: 10px;
-		margin: 0 auto;
-
+		text-align: center;
 	}
 
-	img{
-		margin: 0 auto;
+	section#centeringTutorials{
+		text-align: center;
+		clear: both;
 	}
 
+	div#imageWrapper{
+		margin: 0 auto;
+	}
 }
 
 
