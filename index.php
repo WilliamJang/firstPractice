@@ -9,9 +9,8 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>This is header</h1>
-		</header>
+		<?php include 'header.php';?>
+
 
 		<nav>
 			<a id="googleLink" href="http://www.google.com">Link to Google</a>
@@ -23,7 +22,6 @@
 			<h1>This is section1</h1>
 			<p>Hello World!</p>
 			<div id="imageWrapper">
-			
 				<img src='./images/google-logo.jpg' alt='Google Logo' id='googleLogo' onclick="titleChangeToGoogle()">
 				<img src='./images/naver-logo.png' alt='Naver Logo' id='naverLogo' onclick="titleChangeToNaver()">
 			</div>
