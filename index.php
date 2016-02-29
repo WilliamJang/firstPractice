@@ -10,12 +10,7 @@
 
 	<body>
 		<?php include 'header.php';?>
-
-
-		<nav>
-			<a id="googleLink" href="http://www.google.com">Link to Google</a>
-			<a id="naverLink" href="http://www.naver.com"><button id="naverButton">Link to Naver</button></a>
-		</nav>
+		<?php include 'nav.php';?>
 
 		<section id="section1">
 
@@ -38,11 +33,68 @@
 					<img src='./images/google-logo.jpg' alt='Google Logo' id='imageForCenteringBlock'>
 					This img is centered. (block)&nbsp; &nbsp; *This image's display is changed to block
 				</div>
+		</section></br>
+
+		<section>
+			<h1>This is section for tring PHP codes</h1>
+
+			<form action="action_page.php" method="post">
+				<fieldset>
+					<legend>Personal Information</legend>
+					First name : <br>
+					<input type="text" name="firstName"><br>
+					Last name: <br>
+					<input type="text" name="lastName"><br>
+
+					<input type="radio" name="pet" value="dog" checked> Dog<br>
+					<input type="radio" name="pet" value="cat"> Cat<br>
+					<input type="radio" name="pet" value="parrot"> Parrot<br>
+
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+
+			<?php  echo "This sentence is generated with PHP echo"; ?><br>
+			<!-- Usage of variables with PHP -->
+			<?php
+				$color = "red";
+				echo "My car is ". $color . "<br>";
+			?>
+
+			<?php
+				$color = "blue";
+				echo "My car is ". $color . "<br>";
+			?>
+
+			<?php
+				$txt = "Hello World!";
+				$x = 5;
+				$y = 10.0;
+
+				echo $txt;
+				echo "<br>";
+				echo $x;
+				echo "<br>";
+				echo $y;
+				echo "<br>";
+			?>
+
+			<?php
+				$txt = "Programming";
+				echo "$txt is amazing!" . "<br>";
+				echo $txt . " is " . "amazing!" . "<br>";
+			?>
+
+			<?php
+				$x = 10;
+				$y = 25;
+				$z = $x + $y;
+				echo $x . " plus " . $y . " is " . $z;
+			?>
+
 		</section>
 
-		<footer>
-			This is footer
-		</footer>
+		<?php include 'footer.php';?>
 
 		<script>
 			function titleChangeToGoogle(){
