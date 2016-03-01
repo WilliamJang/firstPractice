@@ -20,6 +20,7 @@
 				<img src='./images/google-logo.jpg' alt='Google Logo' id='googleLogo' onclick="titleChangeToGoogle()">
 				<img src='./images/naver-logo.png' alt='Naver Logo' id='naverLogo' onclick="titleChangeToNaver()">
 			</div>
+			
 
 		</section>
 
@@ -89,8 +90,66 @@
 				$x = 10;
 				$y = 25;
 				$z = $x + $y;
-				echo $x . " plus " . $y . " is " . $z;
+				echo $x , " plus " . $y . " is " . $z . "<br>";
 			?>
+
+			<?php
+				$x = 5;
+				$y = 10;
+
+				function myTest() {
+				    $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y']; // Accessing global varibales in function.
+				} 
+
+				myTest();
+				echo $y , "<br>";
+			?>
+
+			<?php
+				function myTest2(){
+					static $x = 0;
+					echo $x;
+					$x++;
+				}
+
+				myTest2();
+				myTest2();
+				myTest2();
+
+				echo "<-- Static Variables" . "<br>";
+
+				function myTest3(){
+					$x = 0;
+					echo $x;
+					$x++;
+				}
+
+				myTest3();
+				myTest3();
+				myTest3();
+
+				echo "<-- Non static variables" . "<br>";
+			?>
+
+			<?php
+				$cats = array("Bonnie", "Honey", "Shasha");
+				var_dump($cats);
+				echo "<br>";
+			?>
+
+			<?php
+				//Usage of Class
+				class Cat{
+					function Cat(){
+						$this -> species = "persian";
+					}
+				}
+
+				$cute = new Cat();
+
+				echo $cute -> species;
+			?>
+
 
 		</section>
 
